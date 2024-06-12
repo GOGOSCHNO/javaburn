@@ -25,7 +25,7 @@ function sendUserInput() {
 
     const typingIndicator = showTypingIndicator();
 
-    fetch('https://ancient-island-80614-679de07529b5.herokuapp.com/send_message', {
+    fetch('https://javaburn.herokuapp.com/send_message', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

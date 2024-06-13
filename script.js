@@ -153,3 +153,12 @@ function hideTypingIndicator(indicator) {
         indicator.remove();
     }
 }
+// Ajout de la fonction typeMessage pour afficher les réponses du bot
+function typeMessage(message, sender) {
+    const messagesContainer = document.getElementById('messages');
+    const messageDiv = document.createElement('div');
+    messageDiv.className = sender;
+    messageDiv.innerHTML = formatMessage(message);  // Appliquer le formatage du message
+    messagesContainer.appendChild(messageDiv);
+    scrollToBottom(messagesContainer);
+}

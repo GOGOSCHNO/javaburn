@@ -25,7 +25,7 @@ function sendUserInput() {
 
     const typingIndicator = showTypingIndicator();
 
-    fetch('https://javaburn.herokuapp.com/send_message', {
+    fetch('https://javaburn-ced478f521f0.herokuapp.com/send_message', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
